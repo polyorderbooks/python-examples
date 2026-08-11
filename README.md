@@ -22,3 +22,13 @@ Get an API key at [polyorderbooks.com/signup](https://polyorderbooks.com/signup)
 ```bash
 python historical_orderbooks.py
 ```
+
+Need the concepts behind realistic fill assumptions? Read the [historical Polymarket order book data for backtesting](https://polyorderbooks.com/blog/historical-polymarket-order-book-data-backtesting) guide.
+
+## Guides
+
+For broader context on historical data sources and practical retrieval patterns:
+
+- [Polymarket historical data: prices, trades, order books, and API access](https://polyorderbooks.com/blog/polymarket-historical-data-download-prices-trades-order-books)
+- [Historical Polymarket order book data for backtesting](https://polyorderbooks.com/blog/historical-polymarket-order-book-data-backtesting)
+- [Polymarket price history with Python](https://polyorderbooks.com/blog/polymarket-price-history-download-python)
