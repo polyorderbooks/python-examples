@@ -17,7 +17,7 @@ with PolyOrderbooksClient(api_key=os.environ["POLYORDERBOOKS_API_KEY"]) as clien
     )
     for outcome, points in books["data"].items():
         for point in points[:3]:
-            bids, asks = point.get("b") or [], point.get("a") or []
+            bids, asks = point.get("bids") or [], point.get("asks") or []
             print(
                 point["t"],
                 outcome,
