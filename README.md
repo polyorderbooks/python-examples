@@ -35,8 +35,17 @@ python historical_orderbooks.py
 2026-08-20T01:53:00Z No bid 0.943 ask 0.944
 ```
 
-Note `Yes bid + No ask ≈ 1`. The two outcomes are complementary, which is a useful sanity check on
-any pipeline you build against this data.
+`Yes` and `No` pay out 1 between them, which constrains the two books:
+
+```
+yes_ask + no_ask >= 1     buying both costs at least what the pair pays out
+yes_bid + no_bid <= 1     selling both cannot raise more than the obligation
+```
+
+Both hold at every snapshot and make a useful check on any pipeline built against this data.
+
+Note that `yes_bid + no_ask` is not fixed at 1. The two outcomes trade in separate order books,
+so the gap between them moves with the spread on each side.
 
 ## The response shape
 
