@@ -1,7 +1,7 @@
 # PolyOrderbooks Python examples
 
 Runnable scripts for the [PolyOrderbooks API](https://docs.polyorderbooks.com) using the official
-[Python SDK](https://github.com/polyorderbooks/python-sdk) — historical L2 order books, prices, and
+[Python SDK on PyPI](https://pypi.org/project/polyorderbooks/) — historical L2 order books, prices, and
 liquidity metrics for Polymarket.
 
 ## Setup
@@ -97,7 +97,22 @@ def cost_to_buy(point, size):
 
 ## Links
 
-- [Documentation](https://docs.polyorderbooks.com) · [Quickstart](https://docs.polyorderbooks.com/quickstart)
+- [Documentation](https://docs.polyorderbooks.com) — endpoint reference and response shapes
+- [Quickstart](https://docs.polyorderbooks.com/quickstart) — a working request in a minute
 - [Working with L2 order books](https://docs.polyorderbooks.com/historical/order-books)
-- [Python SDK](https://github.com/polyorderbooks/python-sdk) · [PyPI](https://pypi.org/project/polyorderbooks/)
-- [Free sample dataset](https://huggingface.co/datasets/polyorderbooks/polymarket-btc-5min-historical-l2) on Hugging Face
+- [Python SDK on PyPI](https://pypi.org/project/polyorderbooks/) — `pip install polyorderbooks`
+- [MCP server](https://github.com/polyorderbooks/mcp-server) — the same data in Claude and Cursor
+- [n8n workflows](https://github.com/polyorderbooks/n8n-templates) — slippage against real ladders
+- [All free datasets](https://polyorderbooks.com/datasets) — including a research dataset with a DOI
+
+## Questions
+
+Open an issue here for anything about these examples.
+
+For the API itself — a plan, a coverage question, a window these examples do not
+reach — email **contact@polyorderbooks.com**. Bug reports are welcome and usually
+answered the same day.
+
+## Licence
+
+MIT. Not affiliated with, endorsed by, or connected to Polymarket.
